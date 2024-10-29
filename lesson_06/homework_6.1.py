@@ -10,5 +10,8 @@ for c in characters:
         print(characters)
     else:
         char_list.append(c)
-        print(len(char_list))
+        continue
+
+print(len(char_list))
+
 # End-of-file (EOF)# End-of-file (EOF)
