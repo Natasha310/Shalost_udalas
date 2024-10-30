@@ -1,3 +1,6 @@
+"""Module providing a new function printing python version."""
+
+
 # Given list of tuples (name, surname, age, profession, City location)
 # 1 - Add your new record o the beginning of the given list
 # 2 - In modified list swap elements with indexes 1 and 5 (1<->5). Print result
@@ -34,6 +37,7 @@ print(swap_list)
 age_check = updated_list[6], updated_list[10], updated_list[13]
 print(age_check)
 for person in age_check:
-    age = (person[2])
+    age = person[2]
     if age >= 30:
         print(person)
+# End-of-file (EOF)# End-of-file (EOF)
