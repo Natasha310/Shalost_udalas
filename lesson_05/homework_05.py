@@ -1,5 +1,4 @@
-from operator import itemgetter
-
+"""Module providing a new function printing python version."""
 
 
 # Exists some car data with color, year, engine_volume, car type , price
@@ -62,11 +61,9 @@ result_l = list
 
 for items in sorted_l:
     for item in items:
-      for i in item:
-        if i == 2017 or i == 1.6 or i == 36000:
-          result_l = list(items)
-          print(result_l)
-        continue
-
-
-
+        for i in item:
+            if i == 2017 or i == 1.6 or i == 36000:
+                result_l = list(items)
+                print(result_l)
+            continue
+# End-of-file (EOF)# End-of-file (EOF)
