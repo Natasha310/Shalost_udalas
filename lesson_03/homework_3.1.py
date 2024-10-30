@@ -71,13 +71,13 @@ print(total)
 #b) 9907 : 9     e) 7128 : 5
 #c) 2789 : 5     f) 19224 : 9
 """
-a = 8019 % 8
-b = 9907 % 9
-c = 2789 % 5
-d = 7248 % 6
-e = 7128 % 5
-f = 19224 % 9
-print(a, b, c, d, e, f)
+A = 8019 % 8
+B = 9907 % 9
+C = 2789 % 5
+D = 7248 % 6
+E = 7128 % 5
+F = 19224 % 9
+print(A, B, C, D, E, F)
 # task 08
 """
 #Іринка, готуючись до свого дня народження, склала список того,
@@ -95,7 +95,7 @@ pizza_mid = 218 * 2
 juice = 35 * 4
 cake = 350
 water = 21 * 3
-total = (pizza_big+pizza_mid+juice+cake+water)
+total = pizza_big+pizza_mid+juice+cake+water
 
 print(total)
 
@@ -131,6 +131,3 @@ print("Question 1 =" + "144")
 print("Question 2 =" + "3")
 
 # End-of-file (EOF)# End-of-file (EOF)
-
-
-
