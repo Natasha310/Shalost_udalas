@@ -3,15 +3,22 @@
 
 
 print("Enter your sentence")
-characters = input()
-char_list = []
-for c in characters:
-    if c.isalnum() :
-        print(characters)
+uniq_symbols = input()
+for c in uniq_symbols:
+    if len(set(uniq_symbols.lower())) >= 10:
+        print(True)
     else:
-        char_list.append(c)
-        continue
+        print(False)
+    break
 
-print(len(char_list))
+
+
+
+
+
+
+
+
+
 
 # End-of-file (EOF)# End-of-file (EOF)
