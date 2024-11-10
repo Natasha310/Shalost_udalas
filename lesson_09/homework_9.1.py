@@ -2,12 +2,15 @@
 
 
 
-list1 = [1, 3, 5, 7]
-list2 = [1, 4, 5]
+lst1 = [1, 3, 5, 7]
+lst2 = [1, 4, 5]
 
-list_target = [(list1[i] if i < len(list1) else 0, list2[i] if i < len(list2) else 0) for i in range(max(len(list1), len(list2)))]
+result = [(lst1[i] if i < len(lst1) else 0, lst2[i] if i < len(lst2) else 0) for i in range(max(len(lst1), len(lst2)))]
 
-print(list_target)
+print(result)
+
+
+
 # End-of-file (EOF)# End-of-file (EOF)
 
 
