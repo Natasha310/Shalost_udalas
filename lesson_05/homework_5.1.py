@@ -57,13 +57,15 @@ sorted_l = sorted(list_of_data, key = lambda x: x[:][-1][-1])
 #print(sorted_l)
 
 
-result_list = list
+result_list = []
 
 for items in sorted_l:
     for item in items:
         for i in item:
             if i == 2017 or i == 1.6 or i == 36000:
-                result_list = list(items)
-                print(result_list)
+              result_list.append(items[:5])
             continue
+
+print(result_list[0:5])
+
 # End-of-file (EOF)
