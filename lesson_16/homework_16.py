@@ -38,7 +38,7 @@ class Team_lead(Developer, Manager):
         Manager.__init__(self, name, salary, department)
 
 
-def check_attributes():
+def test_check_attributes():
     new = Team_lead(name='Test1', salary=100, team_size=30, programming_language="Python",
                          department='QA Engineer')
     for i in new.__dict__:
@@ -47,7 +47,7 @@ def check_attributes():
 
 
 
-print(check_attributes())
+print(test_check_attributes())
 
 
 
