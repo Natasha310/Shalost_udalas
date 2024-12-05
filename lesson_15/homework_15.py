@@ -2,7 +2,15 @@
 # pylint: disable=missing-class-docstring
 # pylint: disable=missing-function-docstring
 
-
+"""Створіть клас геометричної фігури "Ромб". Клас повинен мати наступні атрибути:
+сторона_а (довжина сторони a).
+кут_а (кут між сторонами a і b).
+кут_б (суміжний з кутом кут_а).
+Необхідно реалізувати наступні вимоги:
+Значення сторони сторона_а повинно бути більше 0.
+Кути кут_а та кут_б повинні задовольняти умову: кут_а + кут_б = 180
+Протилежні кути ромба завжди рівні, тому при заданому значенні кут_а, значення кут_б обчислюється автоматично.
+Для встановлення значень атрибутів використовуйте метод __setattr__."""
 
 class Romb:
     def __init__(self, side_a, angle_a):
@@ -12,10 +20,10 @@ class Romb:
     def __setattr__(self, key, value):
         if key == "side_a":
             if value <= 0:
-                raise ValueError("Довжина сторони має бути більше 0.")
+                print("Side length should be > 0")
         elif key == "angle_a":
             if not (0 < value < 180):
-                raise ValueError("Кут має бути в межах від 0 до 180 градусів.")
+                raise ValueError("Angle should be > 0 and < 180")
 
 
         super().__setattr__(key, value)
