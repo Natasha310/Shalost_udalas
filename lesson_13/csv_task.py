@@ -1,36 +1,25 @@
-
-import logging
 import os
-from pathlib import Path
 import csv
-from csv import writer
 
 """Завдання 1:
-Візміть два файли з теки ideas_for_test/work_with_csv порівняйте на наявність дублікатів і приберіть їх. 
+Візміть два файли з теки ideas_for_test/work_with_csv порівняйте на наявність дублікатів і приберіть їх.
 Результат запишіть у файл result_<your_second_name>.csv"""
 
-file_path = Path('/Users/natalynazarenko/PycharmProjects/pythonProject1/lesson_05')
-#Variable with path to directory
 
+file_path1 = r'lesson_13/work_with_csv/r-m-c.csv'
+file_path2 = r'lesson_13/work_with_csv/random.csv'
 
-def find_duplicate(file_path):
-    duplic = []
-    files = sorted(os.listdir(file_path))
-    for file_name in files:
-        duplic.append(str(file_name))
-        if duplic.count(file_name) > 1:
-            with open('result_nazarenko.csv', 'w') as file_csv:
-                csv.writer(file_csv).writerows(duplic)
-                os.remove(file_name)
-
-        else:
-            print("No Duplicate")
-
-find_duplicate(file_path)
-
-
-
-
-
-
+with open (file_path1, 'rb') as duple:
+    content = duple.read()
+    print("content")
+with open(file_path2, 'rb') as f_csv:
+    content2 = f_csv.read()
+    print("content2")
+    if content == content2:
+        with open('result_nazarenko.csv', 'w') as file_csv:
+            csv.writer(file_csv).writerow(f'Duplicate is found')
+            os.remove(file_path2)
+    else:
+        with open('result_nazarenko.csv', 'w') as file_csv:
+            csv.writer(file_csv).writerow(f'No duplicates')
 

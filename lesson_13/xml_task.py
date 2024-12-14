@@ -8,7 +8,7 @@ import logging
 значення timingExbytes/incoming результат виведіть у консоль через логер на рівні інфо
 """
 
-xml_file = '/Users/natalynazarenko/PycharmProjects/pythonProject1/lesson_05/numbers.xml'
+xml_file = '/lesson_13/numbers.xml'
 #Variable with path to xml
 
 def find_value_in_tree(xml_file):
