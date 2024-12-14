@@ -18,7 +18,7 @@ def find_value_in_tree(xml_file):
     try:
 
         console_out = logging.StreamHandler()
-        file_log = logging.FileHandler('Log.log')
+        file_log = logging.FileHandler('../lesson_10/Log.log')
         logging.basicConfig(handlers=(file_log, console_out),
                              format='[%(asctime)s | %(levelname)s]: %(message)s',
                              datefmt='%m.%d.%Y %H:%M:%S',

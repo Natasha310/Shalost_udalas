@@ -15,7 +15,7 @@ files_json = glob.glob(r'/lesson_13/work_with_json/*.json')
 
 def find_json_files(files_json):
     logging.basicConfig(
-        filename='json_nazarenko.log',
+        filename='../lesson_10/json_nazarenko.log',
         level=logging.ERROR,
         format='%(asctime)s - %(message)s')
 
