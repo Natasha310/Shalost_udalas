@@ -6,8 +6,8 @@ import csv
 Результат запишіть у файл result_<your_second_name>.csv"""
 
 
-file_path1 = r'/Users/natalynazarenko/PycharmProjects/pythonProject1/lesson_13/work_with_csv/r-m-c.csv'
-file_path2 = r'/Users/natalynazarenko/PycharmProjects/pythonProject1/lesson_13/work_with_csv/random.csv'
+file_path1 = r'lesson_13/work_with_csv/r-m-c.csv'
+file_path2 = r'lesson_13/work_with_csv/random.csv'
 
 def check_duplictes(file_path1, file_path2):
     with open (file_path1, 'rb') as duple:
