@@ -9,7 +9,7 @@ from pathlib import Path
 невалідного файлу виведіть через логер на рівні еррор у файл json__<your_second_name>.log
 """
 
-files_json = glob.glob(r'/Users/natalynazarenko/PycharmProjects/pythonProject1/lesson_13/work_with_json/*.json')
+files_json = glob.glob(r'/lesson_10/work_with_json/*.json')
 #Variable with path to files
 
 

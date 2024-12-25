@@ -24,10 +24,10 @@ def find_and_parse(*args, **kwargs):
             image_response = requests.get(link)
             #print("ok")
             if image_response.status_code == 200:
-                with open("mars_photo1.jpg", "wb") as file:
+                with open("../lesson_19/uploads/mars_photo1.jpg", "wb") as file:
                     file.write(image_response.content)
                     print(f"Photo loaded")
-                with open("mars_photo2.jpg", "wb") as files:
+                with open("../lesson_19/mars_photo2.jpg", "wb") as files:
                     files.write(image_response.content)
                     print(f"Photo loaded")
     except HTTPError as http_err:
