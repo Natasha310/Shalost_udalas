@@ -24,7 +24,7 @@ def find_and_parse(*args, **kwargs):
             image_response = requests.get(link)
             #print("ok")
             if image_response.status_code == 200:
-                with open("../lesson_19/uploads/mars_photo1.jpg", "wb") as file:
+                with open("../uploads/mars_photo1.jpg", "wb") as file:
                     file.write(image_response.content)
                     print(f"Photo loaded")
                 with open("../lesson_19/mars_photo2.jpg", "wb") as files:
